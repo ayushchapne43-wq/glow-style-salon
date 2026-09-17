@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glow & Style Salon is a fictional premium salon demo offering thoughtful hair, beauty, skincare, and bridal services.">
+  <meta name="theme-color" content="#f6f0eb">
+  <title>Glow & Style Salon | Feel Beautiful. Feel Confident.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="demo-banner"><span>Portfolio demo</span> Glow & Style Salon is a fictional business concept.</div>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Glow and Style Salon home">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span><strong>Glow &amp; Style</strong><small>Salon studio</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="primary-menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#appointment">Book now <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Beauty, thoughtfully done</p>
+          <h1>Feel beautiful.<br><em>Feel confident.</em></h1>
+          <p class="hero-text">A considered salon experience for your everyday glow, your next big moment, and every version of you in between.</p>
+          <div class="button-row">
+            <a class="button button-dark" href="#appointment">Book appointment <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="status-dot"></span> Taking appointments this week</div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-wrap">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=85" alt="Bright, modern salon styling station with warm wood details" fetchpriority="high">
+          </div>
+          <div class="hero-badge"><strong>01</strong><span>care<br>in every detail</span></div>
+          <div class="hero-caption">EST. 2024 <span></span> YOUR LOCAL BEAUTY RITUAL</div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span>Scroll to explore</span><i></i></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-grid">
+        <div class="section-label"><span>01</span><span>Our story</span></div>
+        <div class="intro-copy reveal"><p class="eyebrow">A little more you</p><h2>Beauty should feel <em>like you.</em></h2><p>Glow &amp; Style is a fictional, modern salon studio imagined around one simple idea: the best beauty experiences leave you feeling more like yourself, not less.</p><p>From the first consultation to the final mirror check, our artists bring a calm, considered approach to every service. Good hair days, made personal.</p><a class="text-link" href="#appointment">Meet us in the chair <span aria-hidden="true">↗</span></a></div>
+        <div class="intro-stat reveal"><strong>14</strong><span>years of combined<br>creative experience</span></div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">Our menu</p><h2>Services with <em>intention.</em></h2></div><p>Personalized rituals, considered products, and a little room to exhale.</p></div>
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="service-icon">✦</div><div><span class="service-number">01</span><h3>Hair styling</h3><p>Effortless waves, polished blowouts, and occasion-ready styling tailored to your texture.</p><strong>From $55</strong></div></article>
+          <article class="service-card reveal"><div class="service-icon">✂</div><div><span class="service-number">02</span><h3>Haircut &amp; grooming</h3><p>A thoughtful cut shaped around your features, lifestyle, and natural movement.</p><strong>From $65</strong></div></article>
+          <article class="service-card reveal"><div class="service-icon">◐</div><div><span class="service-number">03</span><h3>Hair colour</h3><p>Dimensional colour, lived-in blondes, and glossy refreshes with a soft, modern finish.</p><strong>From $120</strong></div></article>
+          <article class="service-card reveal"><div class="service-icon">◇</div><div><span class="service-number">04</span><h3>Nail care</h3><p>Quiet luxury for your hands with careful shaping, nourishing care, and clean colour.</p><strong>From $45</strong></div></article>
+          <article class="service-card reveal"><div class="service-icon">❋</div><div><span class="service-number">05</span><h3>Facial &amp; skincare</h3><p>A restorative facial ritual selected for your skin's current needs and natural radiance.</p><strong>From $85</strong></div></article>
+          <article class="service-card featured reveal"><div class="service-icon">♡</div><div><span class="service-number">06</span><h3>Bridal services</h3><p>Calm, collaborative beauty planning for your day, your party, and every photo after.</p><strong>From $250</strong></div><span class="popular">Signature</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why section">
+      <div class="container why-grid"><div class="why-image reveal"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85" alt="Stylist preparing a client's hair in a calm salon" loading="lazy"><span>02 <i></i> The glow guide</span></div><div class="why-copy reveal"><p class="eyebrow">The glow guide</p><h2>Small details.<br><em>Big difference.</em></h2><div class="benefit-list"><div><span>01</span><p><strong>Experienced professionals</strong><small>Artists who listen first, then make the magic happen.</small></p></div><div><span>02</span><p><strong>Quality products</strong><small>Thoughtful formulas chosen for your hair, skin, and values.</small></p></div><div><span>03</span><p><strong>Personalized service</strong><small>No two appointments are exactly alike. That is the point.</small></p></div><div><span>04</span><p><strong>Comfortable environment</strong><small>A warm, welcoming space with time to settle in.</small></p></div></div></div></div>
+    </section>
+
+    <section class="gallery section" id="gallery"><div class="container"><div class="section-heading reveal"><div><p class="eyebrow">The studio edit</p><h2>A glimpse of the <em>glow.</em></h2></div><p>Sunlit corners, good energy, and a little beauty inspiration.</p></div><div class="gallery-grid"><figure class="gallery-item tall reveal"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=900&q=85" alt="Salon styling tools and products on a counter" loading="lazy"><figcaption>Tools of the trade</figcaption></figure><figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=85" alt="Woman with a polished beauty look" loading="lazy"><figcaption>Everyday radiance</figcaption></figure><figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=900&q=85" alt="Minimal manicure with neutral polish" loading="lazy"><figcaption>Clean and considered</figcaption></figure><figure class="gallery-item wide reveal"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1200&q=85" alt="Portrait of a client with softly styled hair" loading="lazy"><figcaption>Soft focus</figcaption></figure><figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=85" alt="Skincare products arranged on a vanity" loading="lazy"><figcaption>Skin, but better</figcaption></figure><figure class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=85" alt="Close-up portrait with natural makeup" loading="lazy"><figcaption>Your kind of beautiful</figcaption></figure></div></div></section>
+
+    <section class="testimonials section" id="testimonials"><div class="container"><div class="section-label"><span>04</span><span>Kind words</span></div><div class="testimonial-grid"><div class="testimonial-intro reveal"><p class="eyebrow">The good stuff</p><h2>Leave feeling<br><em>lighter.</em></h2><p>Just a few words from our completely fictional, very happy clients.</p></div><blockquote class="quote reveal"><span class="quote-mark">“</span><p>It felt less like an appointment and more like an hour I gave back to myself. I left with exactly the haircut I had been trying to describe for years.</p><footer><strong>Amelia R.</strong><span>Cut &amp; styling guest</span></footer></blockquote><blockquote class="quote reveal"><span class="quote-mark">“</span><p>The whole experience is so personal without ever feeling fussy. My colour is soft, shiny, and somehow makes getting ready easier.</p><footer><strong>Jordan M.</strong><span>Colour guest</span></footer></blockquote></div></div></section>
+
+    <section class="appointment section" id="appointment"><div class="container appointment-grid"><div class="appointment-copy reveal"><p class="eyebrow">Your next glow</p><h2>Let's make time<br>for <em>you.</em></h2><p>Tell us a little about what you have in mind. This demo form does not send or store information; it simply shows the appointment flow.</p><div class="appointment-detail"><span>✦</span><p><strong>Good to know</strong><small>We will reply with fictional availability within one business day.</small></p></div></div><form class="booking-form reveal" id="booking-form" novalidate><div class="form-title"><span>05 / Booking</span><strong>Request an appointment</strong></div><div class="form-row"><label>Name<input type="text" name="name" placeholder="Your name" required></label><label>Phone<input type="tel" name="phone" placeholder="(000) 000-0000" required></label></div><div class="form-row"><label>Service<select name="service" required><option value="">Select a service</option><option>Hair styling</option><option>Haircut &amp; grooming</option><option>Hair colour</option><option>Nail care</option><option>Facial &amp; skincare</option><option>Bridal services</option></select></label><label>Preferred date<input type="date" name="date" required></label></div><label>Message <span class="optional">Optional</span><textarea name="message" rows="4" placeholder="Tell us anything helpful..."></textarea></label><button class="button button-dark" type="submit">Send request <span aria-hidden="true">↗</span></button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
+
+    <section class="contact section" id="contact"><div class="container contact-grid"><div><p class="eyebrow">Come say hello</p><h2>Find your<br><em>happy place.</em></h2></div><div class="contact-details"><div><span>Phone</span><a href="tel:+10000000000">(000) 000-0000</a></div><div><span>Email</span><a href="mailto:hello@example.com">hello@example.com</a></div><div><span>Studio</span><p>123 Example Avenue<br>Suite 04, Your City</p></div><div><span>Hours</span><p>Tue–Fri: 9am–7pm<br>Sat: 9am–4pm</p></div><a class="whatsapp" href="https://wa.me/10000000000" target="_blank" rel="noopener">Message on WhatsApp <span aria-hidden="true">↗</span></a><small class="demo-note">All contact details above are fictional demo data.</small></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">G</span><span><strong>Glow &amp; Style</strong><small>Salon studio</small></span></a><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#appointment">Book</a></div><div class="socials"><a href="#contact" aria-label="Instagram placeholder">ig</a><a href="#contact" aria-label="Pinterest placeholder">p</a><a href="#contact" aria-label="TikTok placeholder">tt</a></div></div><div class="container footer-bottom"><span>© 2024 Glow &amp; Style Salon</span><span>Fictional portfolio demo · Made with care</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
