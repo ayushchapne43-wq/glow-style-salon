@@ -10,7 +10,7 @@ Requires Python 3.10 or newer.
 py python.py
 ```
 
-Open <http://127.0.0.1:8000>. Booking requests are validated and stored locally in `data/appointments.json` (the file is ignored by Git).
+While the server is running, open `http://127.0.0.1:8000` in your browser. This is a local-only address, so it works on your computer but not from the GitHub README. Booking requests are validated and stored locally in `data/appointments.json` (the file is ignored by Git).
 
 ## API
 
