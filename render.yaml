@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: glow-style-salon
+    runtime: python
+    buildCommand: ""
+    startCommand: "python python.py"
+    healthCheckPath: /health

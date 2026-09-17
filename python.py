@@ -63,6 +63,12 @@ class SalonRequestHandler(SimpleHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
+    def do_GET(self):
+        if urlparse(self.path).path == "/health":
+            self.send_json({"status": "ok"}, HTTPStatus.OK)
+            return
+        super().do_GET()
+
     def do_POST(self):
         if urlparse(self.path).path != "/api/appointments":
             self.send_error(HTTPStatus.NOT_FOUND)
@@ -109,8 +115,8 @@ class SalonRequestHandler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", "8000"))
     os.chdir(ROOT)
-    server = ThreadingHTTPServer(("127.0.0.1", port), SalonRequestHandler)
-    print(f"Glow & Style is running at http://127.0.0.1:{port}")
+    server = ThreadingHTTPServer(("0.0.0.0", port), SalonRequestHandler)
+    print(f"Glow & Style is running on port {port}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
